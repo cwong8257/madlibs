@@ -1,0 +1,29 @@
+.match-area {
+  width: 92vw;
+  min-height: calc(100vh - 8vw);
+  font-size: 1.5rem;
+  background-color: var(--color-gray);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+
+  &__section {
+    padding: 3rem;
+    width: 50%;
+
+    &:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    &--white {
+      background-color: var(--color-white);
+    }
+  }
+}
